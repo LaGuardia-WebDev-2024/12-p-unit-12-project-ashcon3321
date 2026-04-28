@@ -43,12 +43,12 @@ Select ONE Additional Feature to Add
     <!-- Book Question -->
     <form id="book-form">
       <label>
-        📖 What is my favorite book?
+        📖 What is my favorite show?
         <select id="book-answer">
-          <option value="book1">book 1</option>
-          <option value="book2">book 2</option>
-          <option value="book3">book 3</option>
-          <option value="book4">book 4</option>
+          <option value="book1">Invincible</option>
+          <option value="book2">Avatar: The last airbender</option>
+          <option value="book3">YOU</option>
+          <option value="book4">Transformers: Prime </option>
         </select>
       </label>
       <button type="submit">Check Book Answer</button>
@@ -56,6 +56,8 @@ Select ONE Additional Feature to Add
     <div id="book-result">
       <p id="book-text"></p>
     </div>
+
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>
       
@@ -67,7 +69,7 @@ Select ONE Additional Feature to Add
         var answer = $answer.val();
 
         if (answer === "movie1") {
-          $("#movie-text").text("YESSSS!");
+          $("#movie-text").text("YAYYYYY!");
         } 
         else {
           $("#movie-text").text("Try Again!");
@@ -81,7 +83,7 @@ Select ONE Additional Feature to Add
         var $answer = $("#book-answer");
         var answer = $answer.val();
 
-        if (answer === "book1") {
+        if (answer === "Avatar: The last airbender") {
           $("#book-text").text("YESSSS!");
         } 
         else {
