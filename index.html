@@ -26,18 +26,22 @@ Select ONE Additional Feature to Add
     <!-- Movie Question -->
     <form id="movie-form">
       <label>
-        🎥 What is my favorite movie?
+        🎥 Who's my favorite Invincible character
         <select id="movie-answer">
-          <option value="movie1">movie 1</option>
-          <option value="movie2">movie 2</option>
-          <option value="movie3">movie 3</option>
-          <option value="movie4">movie 4</option>
+          <option value="movie1">Mark</option>
+          <option value="movie2">Cecil</option>
+          <option value="movie3">Debbie</option>
+          <option value="movie4">Eve</option>
         </select>
       </label>
       <button type="submit">Check Movie Answer</button>
     </form>
     <div id="movie-result">
       <p id="movie-text"></p>
+      <img class ="movie-pic"
+      width="210">
+      <img class ="debbie-pic"
+      width="210">
     </div>
     <hr />
     <!-- Book Question -->
@@ -68,12 +72,23 @@ Select ONE Additional Feature to Add
         var $answer = $("#movie-answer");
         var answer = $answer.val();
 
-        if (answer === "movie1") {
+        if (answer === "movie3") {
           $("#movie-text").text("YAYYYYY!");
         } 
         else {
-          $("#movie-text").text("Try Again!");
+          $("#movie-text").text("nuh uh she cool tho");
         }
+        if (answer === "movie2") {
+          $("#movie-text").text("CLOSE.... 2nd fav");
+          $(".movie-pic").attr("src", "https://static1.cbrimages.com/wordpress/wp-content/uploads/2021/05/Invincible-Cecil-Stedman-.jpeg")
+          $(".movie-pic").animate({
+            width: "250px",
+            marginLeft: "50px",
+          }, 1500);
+        } 
+        if (answer === "movie1") {
+          $("#movie-text").text("nah he a baddie tho");
+        } 
       });
 
       //=======================Book Question jQuery Code
@@ -83,7 +98,7 @@ Select ONE Additional Feature to Add
         var $answer = $("#book-answer");
         var answer = $answer.val();
 
-        if (answer === "Avatar: The last airbender") {
+        if (answer === "book2") {
           $("#book-text").text("YESSSS!");
         } 
         else {
