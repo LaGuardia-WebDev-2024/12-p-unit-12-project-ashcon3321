@@ -47,7 +47,7 @@ Select ONE Additional Feature to Add
     <!-- Book Question -->
     <form id="book-form">
       <label>
-        📖 What is my favorite show?
+        📺 What is my favorite show?
         <select id="book-answer">
           <option value="book1">Invincible</option>
           <option value="book2">Avatar: The last airbender</option>
@@ -100,9 +100,12 @@ Select ONE Additional Feature to Add
 
         if (answer === "book2") {
           $("#book-text").text("YESSSS!");
-        } 
+        }  
         else {
           $("#book-text").text("Try Again!");
+        }
+        if (answer === "book4") {
+          $("#book-text").text("clooossseeee i love ititititi");
         }
       });
       

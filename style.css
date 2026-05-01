@@ -8,8 +8,8 @@
 }
 
 #book-result {
-  background: rgb(196, 159, 255);
-  border: 5px solid black;
+  background: rgb(255, 181, 239);
+  border: 5px solid rgb(248, 110, 218);
   font-size: 24px;
   min-height: 160px;
   margin-top: 10px;
@@ -20,3 +20,18 @@ hr {
   height: 5px;
   background-color: black;
 }
+
+body{
+  text-align:center;
+  width:fit-content;
+  margin:auto
+}
+
+body{
+  background-image: url("https://i.pinimg.com/originals/83/f1/de/83f1de60f7eae7c2815a654ad47ab004.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+
